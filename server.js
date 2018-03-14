@@ -12,7 +12,7 @@ app.use(bodyparser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname,'dist')));
 
 
-app.get('/index',function(req,res){
+app.get('/',function(req,res){
     res.sendFile(__dirname+'/dist/index.html')
 });
 
